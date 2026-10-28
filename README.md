@@ -79,7 +79,7 @@ La decisión tiene que salir de código que mide (geometría, texto leído) y no
 ## Entrega
 
 1. Haz un fork privado de este repositorio.
-2. Sube el código, `results.csv`, `results.xlsx`, el enlace al vídeo e instrucciones para ejecutar el proceso y la app: versión de Python, dependencias y cómo instalar lo que no venga con `pip` (por ejemplo, Tesseract).
+2. Sube el código, `results.csv`, `results.xlsx`, el enlace al vídeo e instrucciones para ejecutar el proceso y la app.
 3. Envía el enlace del fork a [yagotobiosouto@gmail.com](mailto:yagotobiosouto@gmail.com) y comprueba que tenemos acceso.
 
 Nos importa más que cuentes con honestidad dónde falla que un resultado inflado. Puedes dejar partes sin terminar si lo explicas.
@@ -90,9 +90,3 @@ Nos importa más que cuentes con honestidad dónde falla que un resultado inflad
 2. El enfoque y el diseño: cómo planteas el problema, cómo organizas el sistema y lo fácil que es la app para alguien no técnico.
 3. La claridad del vídeo.
 4. Lo fácil que sería seguir con el proyecto: código legible, reglas fáciles de cambiar, dependencias claras, tests.
-
-Tu código es tuyo; Bacci solo lo usa para evaluarte. No compartas el material ni la idea de la prueba.
-
-## Presentación (45 min)
-
-Demo y conversación. Trae pensado, sin código, cómo encontrarías estas caras dentro de un diseño completo de camiseta (texturas, estampados all-over, texto en arco) con cientos de diseños al mes.
