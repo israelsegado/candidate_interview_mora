@@ -9,7 +9,6 @@ Puedes usar modelos preentrenados, OCR y asistentes de IA, y subirles este mater
 - `faces/` y `wordmarks/`, cada una con `Approved/` y `Rejected/`. El motivo de cada rechazo está en `Rejected/rejection_reasons.txt`.
 - `test_set/`: más imágenes, sin respuestas. Pásalas por tu programa y revisa tú el resultado.
 - `review.py`: el punto de entrada, por implementar.
-- `tests/`: tests que comparan tu salida con las respuestas de `tests/expected.csv`.
 
 ## Qué tienes que construir
 
@@ -57,18 +56,7 @@ Hay dos programas, Smiley y SmileyWorld, y se distinguen por el texto. La cara s
 5. **Texto S.W. Smiley.** Punto tras la S y tras la W, en mayúsculas o minúsculas. Falla si falta alguno.
 6. **Cara y texto juntos (`face+text`).** Se aplican todas: boca y ojos a la cara, y la regla de texto del programa al texto.
 
-## Cómo validar
-
-```bash
-pip install -r requirements.txt
-pytest                          # ejecuta review.py sobre faces/ y wordmarks/
-pytest -k f17                   # una sola imagen
-pytest --results=results.csv    # valida un CSV ya generado
-```
-
-Los tests comprueban el formato, que el Excel coincide con el CSV y el veredicto de cada imagen, y al final muestran un resumen de aciertos. Escribe las opciones con `=`; con un espacio, pytest puede tomar la ruta por un archivo de tests.
-
-No hace falta que pase todo. La evaluación final usa otras imágenes, así que ajustar umbrales a estas no ayuda. Preferimos un sistema que generalice, con sus límites bien explicados.
+La evaluación final usa otras imágenes, así que ajustar umbrales a estas no ayuda. Preferimos un sistema que generalice, con sus límites bien explicados, a un 100 % aquí.
 
 ## IA y APIs
 
