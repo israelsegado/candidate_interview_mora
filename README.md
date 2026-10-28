@@ -2,7 +2,7 @@
 
 Bacci Sourcing & Consulting · Proyecto Mora AI
 
-Material confidencial (acuerdo firmado). Puedes usar modelos preentrenados, OCR y asistentes de IA, y subirles este material, solo para esta prueba. Si tienes dudas, escríbenos a [yagotobiosouto@gmail.com](mailto:yagotobiosouto@gmail.com).
+Puedes usar modelos preentrenados, OCR y asistentes de IA, y subirles este material, solo para esta prueba. Si tienes dudas, escríbenos a [yagotobiosouto@gmail.com](mailto:yagotobiosouto@gmail.com).
 
 ## Qué recibes
 
