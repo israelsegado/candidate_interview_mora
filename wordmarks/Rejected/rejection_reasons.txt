@@ -1,0 +1,6 @@
+Screenshot 13.36.33 - "Smiley World" with a space in the middle, on a single line
+Screenshot 13.37.07 - "SMILEY WORLD" with a space in the middle, on a single line
+Screenshot 13.37.27 - "SMILEY WORLD" with a space in the middle, on a single line
+Screenshot 13.40.08 - "SMILEY WORLD" with a space in the middle, on a single line
+w10_EXAMPLE_FAIL_space.png - "SMILEY WORLD" with a space in the middle, on a single line
+w11_EXAMPLE_FAIL_nodots.png - "SW SMILEY" without the dots after the S and the W

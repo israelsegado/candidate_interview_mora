@@ -1,0 +1,4 @@
+Yellow Smiley Face Image (1).jpeg - Mouth: short smile, not the big smile of the approved faces
+Yellow Smiley Face Image.jpeg - Mouth: the ends are flat inward caps, without the dimple shape on both sides
+f16_EXAMPLE_mouthfail.png - Mouth: the mouth ends are erased, no dimples
+f17_EXAMPLE_expressionfail.png - Eyes: a third eye; an approved face has exactly two
