@@ -12,14 +12,14 @@ def process_HSV_image(img_path: str):
     _, imgBinarized = cv.threshold(v_layer_image,0,255,cv.THRESH_BINARY_INV+cv.THRESH_OTSU)
     contours, _ = cv.findContours(imgBinarized, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
 
-    return contours
+    return imgBinarized, contours
 
 def face_features(binarized_img, contour):
     face = max(contour, key=cv.contourArea)
     filling = np.zeros_like(binarized_img)
     cv.drawContours(filling, [face], -1, 255, thickness=cv.FILLED)
 
-    num_labels, _, stats, centroids = cv.connectedComponentsWithStats(binarized_img , connectivity=CONNECTIVITY , ltype=cv.CV_32S)
+    num_labels, labels, stats, centroids = cv.connectedComponentsWithStats(binarized_img , connectivity=CONNECTIVITY , ltype=cv.CV_32S)
 
     face_area = cv.countNonZero(filling)
 
@@ -45,3 +45,20 @@ def face_features(binarized_img, contour):
         print("PASS")
     else:
         print("FAIL")
+
+    features_info = {
+        "components": {
+            "num_labels": num_labels,
+            "labels": labels,
+            "stats": stats,
+            "centroids": centroids
+        },
+        "face_features": {
+            "outer_ring": outer_ring,
+            "eyes": eyes,
+            "mouth": mouth,
+            "face_area": face_area
+        }
+    }
+
+    return features_info
