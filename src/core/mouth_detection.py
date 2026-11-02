@@ -8,6 +8,9 @@ def crop_and_skeletonized_mouth(features: dict[dict]):
     feature_components = features["components"]
     face_features = features["face_features"]
 
+    if face_features["mouth"] is None:
+        return np.zeros((1, 1), dtype=bool)
+
     mouth_idx = face_features["mouth"][0]
     mouth_mask = (feature_components["labels"] == mouth_idx).astype(np.uint8) * 255
 
@@ -79,6 +82,6 @@ def classify_branches(branches, crosses_centroids, w, h):
 
     completes = states.count("Complete")
     if completes == 2:
-        return True, "completed"
+        return True, "Dimples are complete."
     else:
-        return False, f"completed are: {completes} of 2 states: {states}"
+        return False, f"Dimples completed are: {completes} of 2 states: {states}"

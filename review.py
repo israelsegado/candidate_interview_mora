@@ -33,6 +33,12 @@ def review_image(image_path: Path):
 
     try:
         binary_image, contours = process_HSV_image(img_path=str(image_path))
+
+        if len(contours) > 6:
+            row["verdict"] = "FAIL"
+            row["reason"] = "Too much contours."
+            return row
+
         face = max(contours, key=cv.contourArea)
         features = face_features(binarized_img=binary_image, face_contour=face)
 

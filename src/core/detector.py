@@ -29,16 +29,43 @@ def face_features(binarized_img, face_contour):
         if filling[cy, cx] > 0:
             candidates.append((i, stats[i, cv.CC_STAT_AREA]))
 
+    if not candidates:
+        return {"components": {
+                    "num_labels": num_labels, 
+                    "labels": labels, 
+                    "stats": stats, 
+                    "centroids": centroids
+                },
+                "face_features": {
+                    "outer_ring": None, 
+                    "eyes": [], 
+                    "mouth": None, 
+                    "face_area": face_area
+                    }
+                }
+
     outer_ring = max(candidates, key=lambda num: num[1])
-    candidates = [num for num in candidates if num is not outer_ring]
+    candidates = [num for num in candidates if num != outer_ring]
 
     filtered_candidates = [num for num in candidates if num[1] > NOISE_PERCENTAGE*face_area]
 
     if not filtered_candidates:
-        print("FAIL")
+        return {"components": {
+                    "num_labels": num_labels, 
+                    "labels": labels, 
+                    "stats": stats, 
+                    "centroids": centroids
+                },
+                "face_features": {
+                    "outer_ring": outer_ring, 
+                    "eyes": [], 
+                    "mouth": None, 
+                    "face_area": face_area
+                    }
+                }
 
     mouth = max(filtered_candidates, key=lambda num: stats[num[0], cv.CC_STAT_WIDTH])
-    eyes = [num for num in filtered_candidates if num is not mouth]
+    eyes = [num for num in filtered_candidates if num != mouth]
 
     if len(eyes) == 2:
         print("PASS")
