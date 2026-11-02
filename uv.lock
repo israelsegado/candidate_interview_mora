@@ -188,6 +188,7 @@ dependencies = [
     { name = "opencv-python" },
     { name = "openpyxl" },
     { name = "pyqt6" },
+    { name = "pytesseract" },
     { name = "scikit-image" },
     { name = "streamlit" },
     { name = "tesseract" },
@@ -200,6 +201,7 @@ requires-dist = [
     { name = "opencv-python", specifier = ">=5.0.0.93" },
     { name = "openpyxl", specifier = ">=3.1.5" },
     { name = "pyqt6", specifier = ">=6.12.0" },
+    { name = "pytesseract", specifier = ">=0.3.13" },
     { name = "scikit-image", specifier = ">=0.26.0" },
     { name = "streamlit", specifier = ">=1.66.1" },
     { name = "tesseract", specifier = ">=0.1.3" },
@@ -1788,6 +1790,19 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/09/44/a944b91a94c9745cfce05174d4a2dab4faa67b03b23c160948505993b1b0/pyqt6_sip-13.13.0-cp315-cp315-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:78fd781938d09797db6d0b23ac070a91d567c9170581dba3ca87630abb69055b", size = 327367, upload-time = "2026-10-10T14:50:59.831Z" },
     { url = "https://files.pythonhosted.org/packages/2e/b3/939df28667fd61f4d04abb7adab93f034fd4f62a7d3e0dac82ea58268532/pyqt6_sip-13.13.0-cp315-cp315-win_amd64.whl", hash = "sha256:67b37ae7d238462a89908b1c3e3a4bc9551fc9b8d3e8be05ff3314b7a24a3e53", size = 55311, upload-time = "2026-10-10T14:51:02.736Z" },
     { url = "https://files.pythonhosted.org/packages/89/48/a640f06a065655cc0286fc16a7fed8b09bfe3a8291e4223d483e834d0c05/pyqt6_sip-13.13.0-cp315-cp315-win_arm64.whl", hash = "sha256:a1cd42fdbb191d3ee0a0c8858348e18ddb5ea4bbc009af34da4a536db1f92e63", size = 49744, upload-time = "2026-10-10T14:51:04.017Z" },
+]
+
+[[package]]
+name = "pytesseract"
+version = "0.3.13"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "packaging" },
+    { name = "pillow" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/9f/a6/7d679b83c285974a7cb94d739b461fa7e7a9b17a3abfd7bf6cbc5c2394b0/pytesseract-0.3.13.tar.gz", hash = "sha256:4bf5f880c99406f52a3cfc2633e42d9dc67615e69d8a509d74867d3baddb5db9", size = 17689, upload-time = "2024-08-16T02:33:56.762Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7a/33/8312d7ce74670c9d39a532b2c246a853861120486be9443eebf048043637/pytesseract-0.3.13-py3-none-any.whl", hash = "sha256:7a99c6c2ac598360693d83a416e36e0b33a67638bb9d77fdcac094a3589d4b34", size = 14705, upload-time = "2024-08-16T02:36:10.09Z" },
 ]
 
 [[package]]
