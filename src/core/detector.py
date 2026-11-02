@@ -14,10 +14,9 @@ def process_HSV_image(img_path: str):
 
     return imgBinarized, contours
 
-def face_features(binarized_img, contour):
-    face = max(contour, key=cv.contourArea)
+def face_features(binarized_img, face_contour):
     filling = np.zeros_like(binarized_img)
-    cv.drawContours(filling, [face], -1, 255, thickness=cv.FILLED)
+    cv.drawContours(filling, [face_contour], -1, 255, thickness=cv.FILLED)
 
     num_labels, labels, stats, centroids = cv.connectedComponentsWithStats(binarized_img , connectivity=CONNECTIVITY , ltype=cv.CV_32S)
 
