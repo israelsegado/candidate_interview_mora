@@ -98,7 +98,7 @@ def main():
     write_csv(columns=COLUMNS, rows=rows, path=args.output)
     write_xlsx(rows=rows, path=xlsx_path, columns=COLUMNS)
 
-    print(f"{len(rows)} images reviewed -> {args.output}, {xlsx_path}", file=sys.stderr)
+    print(f"{len(rows)} images reviewed -> {args.output}, {xlsx_path}")
     return 0
 
 

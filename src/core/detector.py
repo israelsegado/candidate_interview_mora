@@ -67,11 +67,6 @@ def face_features(binarized_img, face_contour):
     mouth = max(filtered_candidates, key=lambda num: stats[num[0], cv.CC_STAT_WIDTH])
     eyes = [num for num in filtered_candidates if num != mouth]
 
-    if len(eyes) == 2:
-        print("PASS")
-    else:
-        print("FAIL")
-
     features_info = {
         "components": {
             "num_labels": num_labels,
