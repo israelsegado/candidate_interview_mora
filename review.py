@@ -56,7 +56,7 @@ def review_image(image_path: Path):
         num_eyes = len(features["face_features"]["eyes"])
         row["eyes"] = "PASS" if num_eyes==2 else "FAIL"
         if num_eyes != 2:
-            reasons.append(f"The face has {num_eyes}. A valid face has 2 eyes.")
+            reasons.append(f"The face has {num_eyes} eyes. A valid face has 2 eyes.")
 
         skeleton = crop_and_skeletonized_mouth(features=features)
         dimples = dimple_information(skeleton=skeleton)
