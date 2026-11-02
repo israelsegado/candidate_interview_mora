@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-from src.core.config import NOISE_PERCENTAGE, CONNECTIVITY
+from src.core.config import NOISE_PERCENTAGE, CONNECTIVITY, MIN_MOUTH_WIDTH_RATIO
 
 def process_HSV_image(img_path: str):
     img = cv.imread(img_path)
@@ -64,7 +64,12 @@ def face_features(binarized_img, face_contour):
                     }
                 }
 
-    mouth = max(filtered_candidates, key=lambda num: stats[num[0], cv.CC_STAT_WIDTH])
+    mouth_candidate = max(filtered_candidates, key=lambda num: stats[num[0], cv.CC_STAT_WIDTH])
+ 
+    face_width = stats[outer_ring[0], cv.CC_STAT_WIDTH]
+    mouth_width = stats[mouth_candidate[0], cv.CC_STAT_WIDTH]
+
+    mouth = mouth_candidate if mouth_width > (face_width * MIN_MOUTH_WIDTH_RATIO) else None
     eyes = [num for num in filtered_candidates if num != mouth]
 
     features_info = {
