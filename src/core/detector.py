@@ -3,7 +3,10 @@ import numpy as np
 
 from src.core.config import NOISE_PERCENTAGE, CONNECTIVITY, MIN_MOUTH_WIDTH_RATIO
 
-def process_HSV_image(img_path: str):
+def process_HSV_image(img_path: str) -> tuple:
+    """
+    Takes an image and ir returns the same binarized image and its contours.
+    """
     img = cv.imread(img_path)
 
     imgHSV = cv.cvtColor(img, cv.COLOR_BGR2HSV)
@@ -14,7 +17,10 @@ def process_HSV_image(img_path: str):
 
     return imgBinarized, contours
 
-def face_features(binarized_img, face_contour):
+def face_features(binarized_img, face_contour) -> dict:
+    """
+    Extract relevant features of an image. Returning a dictionary with the information.
+    """
     filling = np.zeros_like(binarized_img)
     cv.drawContours(filling, [face_contour], -1, 255, thickness=cv.FILLED)
 

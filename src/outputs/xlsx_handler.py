@@ -1,6 +1,9 @@
 from openpyxl import Workbook 
 
 def write_xlsx(rows, path, columns): 
+    """
+    Writes all the information into a CSV file.
+    """
     wb = Workbook() 
     ws = wb.active 
     ws.title = "Report" 

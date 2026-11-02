@@ -25,7 +25,10 @@ from src.outputs.xlsx_handler import write_xlsx
 COLUMNS = ["file", "type", "program", "verdict", "mouth", "eyes", "text", "reason"]
 FILE_EXTENSIONS = [".png", ".jpg", ".jpeg"]
 
-def review_image(image_path: Path):
+def review_image(image_path: Path) -> dict:
+    """
+    Stablish all the values that will be written on the output files.
+    """
     row = dict.fromkeys(COLUMNS, "N/A")
     row["file"] = image_path.name
     row["type"] = "face" # TODO: distinguir face / text / face+text

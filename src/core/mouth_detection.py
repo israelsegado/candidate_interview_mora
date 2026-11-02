@@ -5,6 +5,9 @@ import cv2 as cv
 from src.core.config import MIN_BRANCH, MAX_BRANCH
 
 def crop_and_skeletonized_mouth(features: dict[dict]):
+    """
+    Takes a features dictionary and returns only de mouth section with made of one pixel.
+    """
     feature_components = features["components"]
     face_features = features["face_features"]
 
@@ -21,7 +24,10 @@ def crop_and_skeletonized_mouth(features: dict[dict]):
     skel = skeletonize(mouth_crop > 0)
     return skel
 
-def dimple_information(skeleton):
+def dimple_information(skeleton) -> dict:
+    """
+    Returns the dimples information of the mouth.
+    """
     sk = (skeleton > 0).astype(np.uint8)
 
     neighbors = cv.filter2D(src=sk, ddepth=-1, kernel=np.ones((3, 3)), borderType=cv.BORDER_CONSTANT) - sk
@@ -45,7 +51,10 @@ def dimple_information(skeleton):
 
     return dimples
 
-def assign_branches(dimples: dict, size: int):
+def assign_branches(dimples: dict, size: int) -> dict:
+    """
+    Assign each endpoint to a branch to determine the form of the dimple.
+    """
     num_crosses = dimples["crosses"]["num"]
     crosses_centroids = dimples["crosses"]["centroids"]
 
@@ -66,7 +75,10 @@ def assign_branches(dimples: dict, size: int):
 
     return branches
 
-def classify_branches(branches, crosses_centroids, w, h):
+def classify_branches(branches, crosses_centroids, w, h) -> tuple[bool, str]:
+    """
+    Evaluates if the branches and centroids can form an appropiate dimple.
+    """
     x_center, y_center = w/2, h/2
     states = []
     for c, points in branches.items():
@@ -82,6 +94,6 @@ def classify_branches(branches, crosses_centroids, w, h):
 
     completes = states.count("Complete")
     if completes == 2:
-        return True, "Dimples are complete."
+        return True, "All dimples are complete."
     else:
-        return False, f"Dimples completed are: {completes} of 2 states: {states}"
+        return False, f"There are {completes} complete dimples."

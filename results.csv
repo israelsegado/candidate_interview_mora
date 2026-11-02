@@ -8,34 +8,34 @@ Screenshot 2026-10-28 at 11.04.30.png,face,smiley,PASS,PASS,PASS,N/A,Valid face
 Screenshot 2026-10-28 at 11.04.56.png,face,smiley,PASS,PASS,PASS,N/A,Valid face
 Screenshot 2026-10-28 at 11.05.52.png,face,smiley,PASS,PASS,PASS,N/A,Valid face
 Screenshot 2026-10-28 at 11.06.20.png,face,smiley,PASS,PASS,PASS,N/A,Valid face
-Screenshot 2026-10-28 at 11.07.12.png,face,smiley,FAIL,FAIL,PASS,N/A,"Dimples completed are: 1 of 2 states: ['Half', 'Complete']"
+Screenshot 2026-10-28 at 11.07.12.png,face,smiley,FAIL,FAIL,PASS,N/A,There are 1 complete dimples.
 Screenshot 2026-10-28 at 11.08.15.png,face,smiley,PASS,PASS,PASS,N/A,Valid face
 Screenshot 2026-10-28 at 11.09.58.png,face,smiley,PASS,PASS,PASS,N/A,Valid face
 Yellow Smiley Face Image copy.jpeg,face,smiley,PASS,PASS,PASS,N/A,Valid face
 blue.png,face,smiley,PASS,PASS,PASS,N/A,Valid face
 f10_spo_heart.png,face,smiley,PASS,PASS,PASS,N/A,Valid face
-f12_sws_wink.png,face,smiley,FAIL,FAIL,PASS,N/A,"Dimples completed are: 0 of 2 states: ['Half', 'Half', 'Half', 'Half', 'Half']"
-f13_sws_xx.png,face,smiley,FAIL,FAIL,PASS,N/A,"Dimples completed are: 1 of 2 states: ['Complete', 'Half']"
-Yellow Smiley Face Image (1).jpeg,face,smiley,FAIL,FAIL,FAIL,N/A,The face has 3 eyes. A valid face has 2 eyes.; Dimples completed are: 0 of 2 states: []
-Yellow Smiley Face Image.jpeg,face,smiley,FAIL,FAIL,PASS,N/A,Dimples completed are: 0 of 2 states: []
-f16_EXAMPLE_mouthfail.png,face,smiley,FAIL,FAIL,PASS,N/A,"Dimples completed are: 1 of 2 states: ['Complete', 'Half']"
-f17_EXAMPLE_expressionfail.png,face,smiley,FAIL,FAIL,FAIL,N/A,"The face has 3 eyes. A valid face has 2 eyes.; Dimples completed are: 1 of 2 states: ['Half', 'Half', 'Half', 'Complete', 'Half']"
+f12_sws_wink.png,face,smiley,FAIL,FAIL,PASS,N/A,There are 0 complete dimples.
+f13_sws_xx.png,face,smiley,FAIL,FAIL,PASS,N/A,There are 1 complete dimples.
+Yellow Smiley Face Image (1).jpeg,face,smiley,FAIL,FAIL,FAIL,N/A,The face has 3 eyes. A valid face has 2 eyes.; There are 0 complete dimples.
+Yellow Smiley Face Image.jpeg,face,smiley,FAIL,FAIL,PASS,N/A,There are 0 complete dimples.
+f16_EXAMPLE_mouthfail.png,face,smiley,FAIL,FAIL,PASS,N/A,There are 1 complete dimples.
+f17_EXAMPLE_expressionfail.png,face,smiley,FAIL,FAIL,FAIL,N/A,The face has 3 eyes. A valid face has 2 eyes.; There are 1 complete dimples.
 Screenshot 2026-10-28 at 11.11.38.png,face,smiley,FAIL,N/A,N/A,N/A,Too much contours.
-Screenshot 2026-10-28 at 11.13.04.png,face,smiley,FAIL,FAIL,FAIL,N/A,The face has 11 eyes. A valid face has 2 eyes.; Dimples completed are: 0 of 2 states: []
+Screenshot 2026-10-28 at 11.13.04.png,face,smiley,FAIL,FAIL,FAIL,N/A,The face has 11 eyes. A valid face has 2 eyes.; There are 0 complete dimples.
 Screenshot 2026-10-28 at 11.14.48.png,face,smiley,FAIL,N/A,N/A,N/A,Too much contours.
-Screenshot 2026-10-28 at 11.15.13.png,face,smiley,FAIL,FAIL,PASS,N/A,Dimples completed are: 0 of 2 states: []
-Screenshot 2026-10-28 at 11.15.37.png,face,smiley,FAIL,FAIL,PASS,N/A,Dimples completed are: 0 of 2 states: []
+Screenshot 2026-10-28 at 11.15.13.png,face,smiley,FAIL,FAIL,PASS,N/A,There are 0 complete dimples.
+Screenshot 2026-10-28 at 11.15.37.png,face,smiley,FAIL,FAIL,PASS,N/A,There are 0 complete dimples.
 Screenshot 2026-10-28 at 11.15.56.png,face,smiley,FAIL,N/A,N/A,N/A,Too much contours.
-Screenshot 2026-10-28 at 11.16.29.png,face,smiley,FAIL,FAIL,FAIL,N/A,The face has 1 eyes. A valid face has 2 eyes.; Dimples completed are: 0 of 2 states: []
-Screenshot 2026-10-28 at 11.17.21.png,face,smiley,FAIL,FAIL,FAIL,N/A,The face has 0 eyes. A valid face has 2 eyes.; Dimples completed are: 0 of 2 states: []
-Screenshot 2026-10-28 at 11.17.51.png,face,smiley,FAIL,FAIL,FAIL,N/A,The face has 0 eyes. A valid face has 2 eyes.; Dimples completed are: 0 of 2 states: []
-Screenshot 2026-10-28 at 11.22.24.png,face,smiley,FAIL,FAIL,PASS,N/A,Dimples completed are: 0 of 2 states: []
+Screenshot 2026-10-28 at 11.16.29.png,face,smiley,FAIL,FAIL,FAIL,N/A,The face has 1 eyes. A valid face has 2 eyes.; There are 0 complete dimples.
+Screenshot 2026-10-28 at 11.17.21.png,face,smiley,FAIL,FAIL,FAIL,N/A,The face has 0 eyes. A valid face has 2 eyes.; There are 0 complete dimples.
+Screenshot 2026-10-28 at 11.17.51.png,face,smiley,FAIL,FAIL,FAIL,N/A,The face has 0 eyes. A valid face has 2 eyes.; There are 0 complete dimples.
+Screenshot 2026-10-28 at 11.22.24.png,face,smiley,FAIL,FAIL,PASS,N/A,There are 0 complete dimples.
 Screenshot 2026-10-28 at 13.38.51.png,face,smiley,FAIL,N/A,N/A,N/A,Too much contours.
 Screenshot 2026-10-28 at 13.39.17.png,face,smiley,FAIL,N/A,N/A,N/A,Too much contours.
 w01_arbuckle.png,face,smiley,FAIL,N/A,N/A,N/A,Too much contours.
 w02_berthold.png,face,smiley,FAIL,N/A,N/A,N/A,Too much contours.
 w04_stacked1.png,face,smiley,FAIL,N/A,N/A,N/A,Too much contours.
-w05_stacked2.png,face,smiley,FAIL,FAIL,FAIL,N/A,The face has 0 eyes. A valid face has 2 eyes.; Dimples completed are: 0 of 2 states: []
+w05_stacked2.png,face,smiley,FAIL,FAIL,FAIL,N/A,The face has 0 eyes. A valid face has 2 eyes.; There are 0 complete dimples.
 w06_sw_grotesk.png,face,smiley,FAIL,N/A,N/A,N/A,Too much contours.
 w07_sw_master.png,face,smiley,FAIL,N/A,N/A,N/A,Too much contours.
 w08_synth.png,face,smiley,FAIL,N/A,N/A,N/A,Too much contours.
@@ -43,7 +43,7 @@ w09_synth_spaced.png,face,smiley,FAIL,N/A,N/A,N/A,Too much contours.
 w12_synth_sw.png,face,smiley,FAIL,N/A,N/A,N/A,Too much contours.
 Screenshot 2026-10-28 at 13.36.33.png,face,smiley,FAIL,N/A,N/A,N/A,Too much contours.
 Screenshot 2026-10-28 at 13.37.07.png,face,smiley,FAIL,N/A,N/A,N/A,Too much contours.
-Screenshot 2026-10-28 at 13.37.27.png,face,smiley,FAIL,FAIL,FAIL,N/A,The face has 0 eyes. A valid face has 2 eyes.; Dimples completed are: 0 of 2 states: []
+Screenshot 2026-10-28 at 13.37.27.png,face,smiley,FAIL,FAIL,FAIL,N/A,The face has 0 eyes. A valid face has 2 eyes.; There are 0 complete dimples.
 Screenshot 2026-10-28 at 13.40.08.png,face,smiley,FAIL,N/A,N/A,N/A,Too much contours.
 w10_EXAMPLE_FAIL_space.png,face,smiley,FAIL,N/A,N/A,N/A,Too much contours.
 w11_EXAMPLE_FAIL_nodots.png,face,smiley,FAIL,N/A,N/A,N/A,Too much contours.
